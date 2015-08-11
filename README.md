@@ -95,6 +95,38 @@ function(
 
 Additionally, a singleton event emitter is attached to each object instance (eg: `this.vent`). This object listens to all stages of the game loop, eg: `this.vent.on('render'...`
 
+## Game loop
+
+5 events are emitted by the core game loop: `update`, `before-render`, `render`,
+`after-render`, `debug`
+
+To start the game loop:
+
+```js
+define([
+  'src/js/lib/gameloop'
+], function( gameLoop ) {
+
+  gameLoop.start();
+
+});
+```
+
+You can subscribe to these events via `src/lib/vent`:
+
+```js
+define([
+  'src/js/lib/vent'
+], function( vent ) {
+
+  vent.on( 'render', function() {
+    console.log('youll render if you know whats good for ya');
+  });
+
+});
+```
+
+
 ## What the build step does
 
 - Runs JSHint on all src files
