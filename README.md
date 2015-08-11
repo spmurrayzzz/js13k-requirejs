@@ -93,6 +93,8 @@ function(
 });
 ```
 
+Additionally, a singleton event emitter is attached to each object instance (eg: `this.vent`). This object listens to all stages of the game loop, eg: `this.vent.on('render'...`
+
 ## What the build step does
 
 - Runs JSHint on all src files
