@@ -25,6 +25,12 @@ grunt express:dev
 
 This launches a server @ http://localhost:8675/
 
+```
+grunt watch
+```
+
+This will auto-build each time a source file changes.
+
 ## Built-in classes
 
 - Event emitter abstraction
