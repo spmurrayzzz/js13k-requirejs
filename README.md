@@ -1,8 +1,8 @@
 # js13kgames template
 
 This repo houses a barebones structure for building games for the
-`requirejs` for dependency management.
 [js13kgames.com](js13kgames.com) competition — with an opinionated structure favoring
+`requirejs` for dependency management.
 
 ## Getting started
 
