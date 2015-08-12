@@ -60,7 +60,7 @@ function(
 
 - Classical inheritance via `BaseClass`
 
-Ex
+Ex:
 ```js
 define([
   'src/js/classes/base'
@@ -93,7 +93,7 @@ function(
 });
 ```
 
-Additionally, a singleton event emitter is attached to each object instance (eg: `this.vent`). This object listens to all stages of the game loop, eg: `this.vent.on('render'...`
+Additionally, a shared singleton event emitter is attached to each object instance (eg: `this.vent`, this is the same instance exported by `src/js/lib/vent`). This object listens to all stages of the game loop, eg: `this.vent.on('render'...`
 
 ## Game loop
 
