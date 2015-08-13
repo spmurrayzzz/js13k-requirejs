@@ -24,7 +24,7 @@ module.exports = function( grunt ) {
       }
 
       var data = item.toString('utf8')
-        .replace(/\<script src=\"js\/app\.min\.js\"\>\<\/script\>/g, jsString )
+        .replace(/\<script src=\"js\/app\.js\"\>\<\/script\>/g, jsString )
         .replace(
           /\<link href=\"css\/app.css\" rel=\"stylesheet\" type=\"text\/css\"\>/g,
           cssString
