@@ -23,7 +23,7 @@ grunt
 grunt express:dev
 ```
 
-This launches a server @ http://localhost:8675/
+This launches a server @ http://localhost:8675/dist/
 
 ```
 grunt watch
