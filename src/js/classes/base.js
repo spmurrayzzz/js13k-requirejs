@@ -22,6 +22,7 @@ function(
 
     function Base() {
       this.vent = vent;
+      EventEmitter.call( this );
       if ( typeof this.init === 'function' ) {
         this.init.apply( this, arguments );
       }
